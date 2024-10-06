@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="encabezado"><h1 class="titulo">Lista de Tareas</h1></header>
+    <main>
+      <form class="formulario">
+        <input
+          class="titulo-tarea"
+          type="text"
+          name=""
+          id="titulo"
+          placeholder="Título"
+          required
+        /><br />
+        <input
+          class="materia"
+          type="text"
+          name=""
+          id="materia"
+          placeholder="Materia"
+          required
+        /><br />
+        <label>Fecha de Entrega</label>
+        <input
+          class="fecha-entrega"
+          type="date"
+          name=""
+          id="fechaEntrega"
+          required
+        /><br />
+        <button class="btn-agregar" type="submit">Agregar</button>
+      </form>
+      <!-- Mostrar tareas -->
+      <div class="tasks-list">
+        <ul></ul>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 DanyBasulto. Todos los Derechos Reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
